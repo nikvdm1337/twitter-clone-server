@@ -2,6 +2,8 @@
 const express = require('express')
 const app = express()
 
+require('./db')
+app.get('/api/users', require('./controllers/get_users') )
 
 app.listen(2000, (err) => {
     if (err) {
