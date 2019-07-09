@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/slack', {useNewUrlParser:true}, (err) => {
+mongoose.connect('mongodb://localhost:27017/twitter', {useNewUrlParser:true}, (err) => {
     if (err) {
         console.log("Connection failed: ", err)
     } else {
