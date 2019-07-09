@@ -1,7 +1,7 @@
-const db = require('../db')
+const db_user = require('../models/user')
 
 module.exports = (req, res) => {
-	db.getCollection('users').find({}).then((data) => {
+	db_user.find({}).select('name').then((data) => {
 		res.send(data)
 	}).catch((err) => {
 		res.send(err)
