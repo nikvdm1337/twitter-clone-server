@@ -15,7 +15,7 @@ app.use(cors())
 require('./db')
 
 app.get('/api/messages', require('./controllers/get_messages'))
-app.post('/api/messages', require('./controllers/post_messages'))
+app.post('/api/messages', require('./controllers/post_message'))
 
 app.get('/api/channels', require('./controllers/get_channels'))
 app.post('/api/channels', require('./controllers/post_channels'))
