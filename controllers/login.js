@@ -18,7 +18,8 @@ module.exports = (req, res) => {
                     })
                 } else {
                     // 3. If passwords match, response "Login successful"
-                    res.send('Wrong password and/or E-Mail address.')
+                   
+                    res.send(`Wrong password and/or E-Mail address.`)
                 }
             })
         } else {
